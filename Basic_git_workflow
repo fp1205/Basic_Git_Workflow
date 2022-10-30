@@ -1,0 +1,72 @@
+#Step1:To initicalize Git Repository
+# $git init 
+#Step2: git status 
+# $ git status 
+# Comment:Red = untracked > add to tracking
+# Step 3: Add filename 
+#Comment: in order for git to track need to add file name.
+# $ git add scene-1 txt
+# Step 4: Check status 
+# $ git status 
+#Comment: Git , add > to track files
+#Step 5: Check differences between the working directry & staging area.
+# $git diff filename
+# Add text dumblediff: I shouldve known you would be here, professor McGonagit
+# $click run.
+# $ git diff scene-1 txt
+#comment: to see new lines of codes added to file (green text)
+# $git add scene-1 txt 
+# add changes to stage area.
+# Step 6: Make Commit message
+# $ git commit -m "Added new lines with the orginal line"
+#Comment: Shows how many files changed / check status
+# Step 7: Git Log 
+# $ git log
+# Comment : Shows author / date > shows commit (new message) I added.
+# Summary: git init creates a new Git repositorygit status inspects the contents of the working directory and staging areagit add adds files from the working directory to the staging areagit diff shows the difference between the working directory and the staging areagit commit permanently stores file changes from the staging area in the repositorygit log shows a list of all previous commits.
+##NEXT TOPIC 
+#  PUSH AND PULL
+# Git Clone 
+# Comment : A way to keep track of and review each other's work access to a definitive project version, and you can accomplish all of these by using remote. A remote is a shared git repository that allows multiple collaborators to work on the same gift project from different locations.
+# $git clone remote_loction clone_name
+# $ git clone sciences-quizzes my-quizzes
+#Comment: path of clone created "my quizzes" will be the local clone repository (local machine)
+# GIT REMOTE -V
+# $git remote -v
+# $cd my-quizzes/
+# $cd remote -vi
+# Comment:adding the origin. Check what is in the remote source from the specific repository
+# comment: Git automatically names the remote orgin as it refers to the remote repository of orgin.
+# Git Fetch 
+# $ git fetch
+#comment : Brings chages on a remote branch
+# $ cd my-quizzes
+# $git fetch
+# Comment: No changes , if changes will add in remote / orgin branch 
+# Git Merge
+# $ git merge orgin/ master
+# Comment : Used command To merge changes
+# $cd my-quizzes
+# Commit message "Add first question to phsics quiz"
+# to print commit history use command $ git log
+# Git Workflow
+# Fetch and merge changes from the remote. Create a branch to work on a new project feature.Develop the feature on your branch and commit your workFetch and merge from the remote again (in case new commits were made while you were working)Push your branch up to the remote for review.
+# CREATE BRANCH
+# $ cd my-quizzes
+# Comment : to create a branch use command $git branch <branch name>
+# $ git branch <bio questions>
+# $ git checkout bio-questions
+#COMMENT : switch from one branch to another use $ git checkout
+# ADD BIOLOGY QUESTION THEN HIT RUN 
+# $ git add biology.txt 
+# Comment : to add bio question to staging use $git add
+# $ git commit -m added a new question
+# Comment : will see new question posted.
+# GIT PUSH 
+# $git push orgin <your_branch_name>
+# Comment : USE command to push branch up to the remote orgin. From there work can be viwed and merged to master branch
+# $ cd my-quizzes 
+# Comment: To change directories into my-quizzes directory
+# $git push orgin bio-questions
+# Comment : git will inform that the branch bio-questions was pushed up to the remote
+# SUMMARY : git clone: Creates a local copy of a remote.git remote -v: Lists a Git project’s remotes.git fetch: Fetches work from the remote into the local copy.git merge origin/master: Merges origin/master into your local branch.git push origin <branch_name>: Pushes a local branch to the origin remote
